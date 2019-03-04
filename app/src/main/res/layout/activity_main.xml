@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/show_video_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show reward video ad"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/show_video_closable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show closable video ad"
+        android:layout_below="@+id/show_video_reward"/>
+
+    <Button
+        android:id="@+id/show_video_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show general video ad"
+        android:layout_below="@+id/show_video_closable"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/show_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show fullscreen ad"
+        android:layout_below="@id/show_video_general"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/show_fullscreen"
+        android:layout_marginTop="15dp"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/banner_1"
+        android:layout_marginTop="15dp"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/banner_2"
+        android:layout_marginTop="15dp"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/banner_3"
+        android:layout_marginTop="15dp"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/banner_4"
+        android:layout_marginTop="15dp"/>
+
+    <ir.adad.banner.AdadBannerAd
+        android:id="@+id/banner_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:token="YOUR_BANNER_AD_CONTAINER_TOKEN_GOES_HERE"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/banner_5"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+</RelativeLayout>

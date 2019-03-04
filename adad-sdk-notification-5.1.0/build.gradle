@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('adad-sdk-notification-5.1.0.aar'))

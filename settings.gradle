@@ -1,0 +1,1 @@
+include ':app', ':adad-sdk-core-5.1.0', ':adad-sdk-banner-5.1.0', ':adad-sdk-ad-5.1.0', ':adad-sdk-fullscreen-ad-5.1.0', ':adad-sdk-video-5.1.0', ':adad-sdk-notification-5.1.0'
