@@ -22,13 +22,22 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    // Adad core dependencies
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
+    implementation 'com.goebl:david-webb:1.3.0'
+
+    // Adad notification ad dependencies
+    implementation 'android.arch.work:work-runtime:1.0.0-beta01'
+
+    // Adad sdk
     implementation project(':adad-sdk-ad-5.1.0')
     implementation project(':adad-sdk-banner-5.1.0')
     implementation project(':adad-sdk-core-5.1.0')
     implementation project(':adad-sdk-fullscreen-ad-5.1.0')
     implementation project(':adad-sdk-notification-5.1.0')
     implementation project(':adad-sdk-video-5.1.0')
+
 }
